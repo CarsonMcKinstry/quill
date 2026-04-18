@@ -9,7 +9,9 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint --ext .ts,.tsx .",
+    "routes:generate": "tsr generate",
+    "routes:watch": "tsr watch"
   },
   "keywords": [],
   "author": {
