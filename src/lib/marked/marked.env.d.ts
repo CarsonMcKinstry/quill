@@ -7,3 +7,5 @@ declare module "marked-subsuper-text";
 declare module "marked-variables";
 
 declare module "marked-extended-tables";
+
+declare module "@/lib/marked/marked";
