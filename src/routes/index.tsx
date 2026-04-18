@@ -1,5 +1,6 @@
 import { Editor } from "@/components/Editor/Editor";
 import { MarkdownRenderer } from "@/components/MarkdownRenderer/MarkdownRenderer";
+import sample from "@/data/sample.md";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Group, Panel, Separator } from "react-resizable-panels";
@@ -9,10 +10,7 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
-  const [value, setValue] = useState(`# Hello, World
-| id | description |
-| - | - | 
-| 1 | hello, world |`);
+  const [value, setValue] = useState(sample);
 
   return (
     <Group>

@@ -12,6 +12,14 @@ export default defineConfig({
     }),
     react(),
     tailwindcss(),
+    {
+      name: "markdown-loader",
+      transform(code, id) {
+        if (id.slice(-3) === ".md") {
+          return `export default ${JSON.stringify(code)}`;
+        }
+      },
+    },
   ],
   resolve: {
     alias: {
