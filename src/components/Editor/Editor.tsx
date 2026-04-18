@@ -9,7 +9,7 @@ type EditorProps = {
 export const Editor = ({ content, onChange }: EditorProps) => {
   return (
     <CodeMirror
-      className="flex-1 overflow-scroll pb-4"
+      className="h-full overflow-scroll pb-4"
       value={content}
       height="100%"
       onChange={onChange}
