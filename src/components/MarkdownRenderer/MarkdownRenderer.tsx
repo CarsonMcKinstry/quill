@@ -1,4 +1,4 @@
-import { marked } from "marked";
+import { Marked } from "@/lib/marked/marked";
 import { useMemo } from "react";
 
 type MarkdownRendererProps = {
@@ -7,7 +7,7 @@ type MarkdownRendererProps = {
 
 export const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
   const markdown = useMemo(() => {
-    return marked.parse(content);
+    return Marked.parse(content);
   }, [content]);
 
   return (
